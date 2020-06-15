@@ -12,7 +12,6 @@ public:
         });
         string str = strs[0];
 
-        int n = strs.size();
         for(string s : strs){
             while(s.substr(0,str.size()) != str)
                 str.pop_back();
