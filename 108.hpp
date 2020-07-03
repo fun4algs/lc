@@ -4,7 +4,7 @@ public:
         return helper(nums, 0, nums.size() - 1);
     }
     TreeNode* helper(vector<int>&nums, int l, int r){
-        if(l < r) return nullptr;
+        if(l > r) return nullptr;
         int mid = l + (r - l) / 2;
         TreeNode* p = new TreeNode(nums[mid]);
 
